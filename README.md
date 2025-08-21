@@ -99,3 +99,5 @@ Cuando dos ramas modifican la misma parte del archivo, Git lo marca así:
   Welcome to Git & GitHub – CS2031
 </h1>
 ```
+
+Espero les sirva esta guía para abordar el reto. Con cariño, su TA a distancia Gabriel. 😊
