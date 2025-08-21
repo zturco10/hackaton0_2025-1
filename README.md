@@ -48,7 +48,7 @@ Resulta que un TA (no diremos nombre 🤫) estuvo moviendo los archivos, alteran
 ### 👑 Organización del equipo
 - Elijan un **líder de equipo**, que será el encargado de crear y asignar los issues.  
 - Cada integrante trabajará en **su propia rama individual** (`feat/member-nombre`) y abrirá un PR para que el líder lo revise y acepte.  
-- Habrá **conflictos intencionales** en los archivos (por ejemplo en la lista de integrantes y en el CSS), que deberán resolver colaborativamente.  
+- Habrá **conflictos intencionales** en los archivos (por ejemplo en la lista de integrantes y entre diferentes arquitecturas de CSS), que deberán resolver colaborativamente.  
 
 ### ✅ Pasos principales
 
@@ -61,10 +61,10 @@ Resulta que un TA (no diremos nombre 🤫) estuvo moviendo los archivos, alteran
      - Cada integrante edita `team.html` en su **propia rama** (`feat/member-nombre`).  
      - Agrega `<li>Su Nombre</li>`.  
      - **Conflicto esperado:** varios editan la misma línea → deberán resolverlo conservando todos los nombres.  
-   - **#2 CSS separado (1 PR)**  
-     - Dividir `styles.css` en varios archivos (`layout.css`, `components.css`).  
-     - En `styles.css` usar `@import`.  
-     - Para lograrlo tendrán que recuperar partes de commits anteriores y mezclarlas con la versión actual.  
+   - **#2 CSS modular (1 PR)**  
+     - La rama `clean-css` tiene el CSS dividido en archivos modulares (`footer.css`, `header.css`, `main.css`, etc.) con imports en `index.css`.  
+     - La rama `main` tiene todo el CSS en un archivo monolítico `index.css`.  
+     - **Conflicto esperado:** Al hacer merge, tendrán dos versiones completamente diferentes del sistema de estilos que deberán integrar correctamente.  
    - **#3 Navbar (1 PR)**  
      - Corregir los enlaces del `<nav>` para que apunten a las secciones correctas.  
      - Revisar el historial y unir los cambios pasados con los actuales.  
