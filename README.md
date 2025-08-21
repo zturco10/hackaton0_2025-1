@@ -78,18 +78,16 @@ Resulta que un TA (no diremos nombre 🤫) estuvo moviendo los archivos, alteran
      - Activar GitHub Pages desde `main`.  
      - Validar que el sitio funcione.  
 
-## ⚡ Ejemplo de conflicto
+> ⚠️ **Nota importante:** En CSS, la regla `@import` **debe ir siempre al inicio del archivo**, antes de cualquier selector o propiedad. Si colocas propiedades o selectores antes del `@import`, el navegador lo ignorará y no funcionará.  
 
-Cuando dos ramas modifican la misma parte del archivo, Git lo marca así:
+✅ Ejemplo correcto:
+```css
+@import url("reset.css");
 
-```html
-<h1 class="hero__title">
-<<<<<<< HEAD
-  Welcome to Git & GitHub
-=======
-  Welcome to Git & GitHub – CS2031
->>>>>>> navbar-fix
-</h1>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 ````
 
 👉 El equipo debe **resolver manualmente**, quitando los marcadores y dejando una versión consensuada:
