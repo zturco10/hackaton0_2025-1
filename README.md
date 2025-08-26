@@ -104,7 +104,7 @@ Resulta que un TA (no diremos nombre 🤫) estuvo moviendo los archivos, alteran
 
 ---
 
-### ⚡ Ejemplo de conflicto en `team.html`
+### ⚡ Ejemplo de conflicto en `index.html`
 
 Cuando dos integrantes editan la misma línea, Git genera un conflicto como este:
 
@@ -130,3 +130,7 @@ Cuando dos integrantes editan la misma línea, Git genera un conflicto como este
 💡 Recuerden: **Git es como viajar en el tiempo** ⏳. Pueden traer de vuelta partes de commits anteriores y combinarlas con el presente. El reto no es programar mucho, sino **resolver conflictos, coordinarse y documentar todo con ramas y PRs**.
 
 La página es estática (HTML + CSS con principios BEM). El desafío está en **organizar el trabajo, arreglar conflictos y lograr un deploy funcional en equipo**.
+
+Espero que el reto les haya gustado y que hayan aprendido sobre la importancia de la colaboración en el desarrollo de software. Con cariño, su TA a distancia Gabriel Romero.
+
+P.D. Se vienen cositas interesantes en el próximo reto.
