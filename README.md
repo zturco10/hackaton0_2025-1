@@ -57,25 +57,52 @@ Resulta que un TA (no diremos nombre 🤫) estuvo moviendo los archivos, alteran
 
 1. **Seleccionar un líder de equipo.**
 
-   - Abre un issue “Checklist del equipo”.
-   - Coordina y supervisa el progreso de cada miembro.
+- Crear un nuevo repositorio usando la plantilla `cs2031-2025-2-hackathon-0` y asegurandose de incluir todas las ramas.
+- Dar acceso de colaborador a todos los miembros del equipo.
+- Abre un issue “Checklist del equipo”.
+- Coordina y supervisa el progreso de cada miembro.
 
 2. **Checklist del equipo (issues a crear por el líder):**
    - **#1 Datos personales (PR por persona)**
      - Cada integrante edita la sección de su tarjeta personal en `index.html` en su **propia rama** (`feat/member-nombre`).
+     - Reemplaza en el div `<div class="team-card__content">` con tus datos propios.
+     - **Conflicto esperado:** varios editan la misma línea → deberán resolverlo conservando todos los nombres. 
      - Debe reemplazar los comentarios y datos de ejemplo por sus datos reales:
        - Foto de perfil (`src` y `alt` en `<img>`)
        - Nombre completo (`<h3>`)
        - Especialidad o rol (`<p>`)
        - Links de GitHub y LinkedIn (`href`)
-     - **Conflicto esperado:** varios editan la misma tarjeta → deberán resolverlo conservando todos los datos de cada integrante.
+     - Ejemplo:
+       ```html
+       <div class="team-card__content">
+         <!-- Aquí tu nombre completo -->
+         <h3 class="team-card__name">Sparky</h3>
+         <!-- Aquí tu especialidad o rol (ej: Frontend Developer, Backend Developer, etc.) -->
+         <p class="team-card__role">Frontend Developer</p>
+         <div class="team-card__social">
+           <!-- Aquí tu link de GitHub (reemplaza el # con tu URL) -->
+           <a
+             href="https://github.com/CS2031-DBP"
+             class="team-card__social-link team-card__social-link--github"
+           >
+             <i class="fab fa-github"></i>
+           </a>
+           <!-- Aquí tu link de LinkedIn (reemplaza el # con tu URL) -->
+           <a
+             href="https://www.linkedin.com/school/utec-universidad-de-ingenieria-y-tecnologia/"
+             class="team-card__social-link team-card__social-link--linkedin"
+           >
+             <i class="fab fa-linkedin"></i>
+           </a>
+         </div>
+       </div>
+       ```
    - **#2 CSS modular (1 PR)**
      - La rama `clean-css` tiene el CSS dividido en archivos modulares (`footer.css`, `header.css`, `main.css`, etc.) con imports en `index.css`.
      - La rama `main` tiene todo el CSS en un archivo monolítico `index.css`.
      - **Conflicto esperado:** Al hacer merge, tendrán dos versiones completamente diferentes del sistema de estilos que deberán integrar correctamente.
    - **#3 Navbar (1 PR)**
-     - Corregir los enlaces del `<nav>` para que apunten a las secciones correctas.
-     - Revisar el historial y unir los cambios pasados con los actuales.
+     - Corregir los enlaces del `<nav>` usando la rama `navbar-fix`, para que los links apunten a las secciones correctas.
    - **Publicado en Pages**
      - Activar GitHub Pages desde `main`.
      - Validar que el sitio funcione y compartir la URL.
@@ -117,3 +144,7 @@ Cuando dos integrantes editan la misma línea, Git genera un conflicto como este
 💡 Recuerden: **Git es como viajar en el tiempo** ⏳. Pueden traer de vuelta partes de commits anteriores y combinarlas con el presente. El reto no es programar mucho, sino **resolver conflictos, coordinarse y documentar todo con ramas y PRs**.
 
 La página es estática (HTML + CSS con principios BEM). El desafío está en **organizar el trabajo, arreglar conflictos y lograr un deploy funcional en equipo**.
+
+Espero que el reto les haya gustado y que hayan aprendido sobre la importancia de la colaboración en el desarrollo de software. Con cariño, su TA a distancia Gabriel Romero.
+
+P.D. Se vienen cositas interesantes en el próximo reto.
