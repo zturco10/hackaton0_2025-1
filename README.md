@@ -64,9 +64,33 @@ Resulta que un TA (no diremos nombre 🤫) estuvo moviendo los archivos, alteran
 
 2. **Checklist del equipo (issues a crear por el líder):**
    - **#1 Nombres (PR por persona)**
-     - Cada integrante edita `team.html` en su **propia rama** (`feat/member-nombre`).
-     - Agrega `<li>Su Nombre</li>`.
-     - **Conflicto esperado:** varios editan la misma línea → deberán resolverlo conservando todos los nombres.
+     - Cada integrante edita `index.html` en su **propia rama** (`feat/member-nombre`).
+     - Reemplaza en el div `<div class="team-card__content">` con tus datos propios.
+     - **Conflicto esperado:** varios editan la misma línea → deberán resolverlo conservando todos los nombres. Ejemplo:
+       ```html
+       <div class="team-card__content">
+         <!-- Aquí tu nombre completo -->
+         <h3 class="team-card__name">Sparky</h3>
+         <!-- Aquí tu especialidad o rol (ej: Frontend Developer, Backend Developer, etc.) -->
+         <p class="team-card__role">Frontend Developer</p>
+         <div class="team-card__social">
+           <!-- Aquí tu link de GitHub (reemplaza el # con tu URL) -->
+           <a
+             href="https://github.com/CS2031-DBP"
+             class="team-card__social-link team-card__social-link--github"
+           >
+             <i class="fab fa-github"></i>
+           </a>
+           <!-- Aquí tu link de LinkedIn (reemplaza el # con tu URL) -->
+           <a
+             href="https://www.linkedin.com/school/utec-universidad-de-ingenieria-y-tecnologia/"
+             class="team-card__social-link team-card__social-link--linkedin"
+           >
+             <i class="fab fa-linkedin"></i>
+           </a>
+         </div>
+       </div>
+       ```
    - **#2 CSS modular (1 PR)**
      - La rama `clean-css` tiene el CSS dividido en archivos modulares (`footer.css`, `header.css`, `main.css`, etc.) con imports en `index.css`.
      - La rama `main` tiene todo el CSS en un archivo monolítico `index.css`.
