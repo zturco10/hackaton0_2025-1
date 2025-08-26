@@ -96,8 +96,7 @@ Resulta que un TA (no diremos nombre 🤫) estuvo moviendo los archivos, alteran
      - La rama `main` tiene todo el CSS en un archivo monolítico `index.css`.
      - **Conflicto esperado:** Al hacer merge, tendrán dos versiones completamente diferentes del sistema de estilos que deberán integrar correctamente.
    - **#3 Navbar (1 PR)**
-     - Corregir los enlaces del `<nav>` para que apunten a las secciones correctas.
-     - Revisar el historial y unir los cambios pasados con los actuales.
+     - Corregir los enlaces del `<nav>` usando la rama `navbar-fix`, para que los links apunten a las secciones correctas.
    - **Publicado en Pages**
      - Activar GitHub Pages desde `main`.
      - Validar que el sitio funcione y compartir la URL.
