@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a573276be50301d8b985ae28f6e13c4c1fb09729
 /* index.css (versión limpia con imports) */
 @import "./styles/footer.css";
 @import "./styles/header.css";
@@ -814,4 +817,7 @@ a:hover {
     grid-template-columns: 1fr;
   }
 }
+<<<<<<< HEAD
 >>>>>>> main
+=======
+>>>>>>> a573276be50301d8b985ae28f6e13c4c1fb09729
