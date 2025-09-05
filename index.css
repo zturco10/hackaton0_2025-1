@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a573276be50301d8b985ae28f6e13c4c1fb09729
+/* index.css (versión limpia con imports) */
+@import "./styles/footer.css";
+@import "./styles/header.css";
+@import "./styles/main.css";
+@import "./styles/nav.css";
+@import "./styles/page.css";
+@import "./styles/team.css";
+=======
 /* index.css MONOLÍTICO para el reto */
 h1 { color: blue; }
 /* Footer Block */
@@ -805,3 +817,7 @@ a:hover {
     grid-template-columns: 1fr;
   }
 }
+<<<<<<< HEAD
+>>>>>>> main
+=======
+>>>>>>> a573276be50301d8b985ae28f6e13c4c1fb09729
